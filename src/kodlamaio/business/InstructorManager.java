@@ -8,7 +8,7 @@ public class InstructorManager {
     private InstructorDao instructorDao;
     private Logger logger;
 
-    public InstructorManager(InstructorDao instructorDao, Logger logger) {
+    public InstructorManager(InstructorDao instructorDao, Logger logger) { //Injecting the Repository(Data Access Object - DAO) to the Managager with constructor
         this.instructorDao = instructorDao;
         this.logger = logger;
     }
